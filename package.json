@@ -1,0 +1,17 @@
+{
+  "name": "forwarder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js",
+    "start:bg": "forever start src/index.js",
+    "stop:bg": "forever stop src/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "forever": "^3.0.4",
+    "js-yaml": "^4.0.0",
+    "tunnel-ssh": "^4.1.4"
+  }
+}
